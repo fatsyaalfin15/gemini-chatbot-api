@@ -19,8 +19,13 @@ const GEMINI_MODEL = "gemini-2.5-flash";
 
 app.use(cors());
 app.use(express.json());
+
+// Sajikan file statis dari direktori 'public' (untuk style.css dan script.js)
 app.use(express.static(path.join(___dirname, 'public')));
 
+app.get('/', (req, res) => {
+    res.sendFile(path.join(___dirname, 'index.html'));
+});
 
 const PORT = 3000;
 app.listen(PORT, () => {
