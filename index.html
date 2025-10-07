@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gemini AI Chatbot</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- Container untuk semua elemen animasi latar belakang -->
+  <div class="background-container">
+    <!-- Beberapa bintang statis -->
+    <div class="stars" style="top:50px; left:100px;"></div>
+    <div class="stars" style="top:200px; left:400px;"></div>
+    <div class="stars" style="top:600px; left:700px;"></div>
+    <div class="stars" style="top:300px; left:900px;"></div>
+    <div class="stars" style="top:150px; left:1200px;"></div>
+    <div class="stars" style="top:350px; left:1400px;"></div>
+    <div class="stars" style="top:500px; left:1600px;"></div>
+    <div class="stars" style="top:250px; left:1800px;"></div>
+
+    <!-- Bintang jatuh -->
+    <div class="shooting-star" style="top:100px; left:80%; animation-delay: 2s;"></div>
+    <div class="shooting-star" style="top:100px; left:80%; animation-delay: 3s;"></div>
+    <div class="shooting-star" style="top:300px; left:60%; animation-delay: 5s;"></div>
+     <div class="shooting-star" style="top:300px; right:60%; animation-delay: 4s;"></div>
+    <div class="shooting-star" style="top:500px; left:90%; animation-delay: 8s;"></div>
+  </div>
+
+  <!-- Container chatbot -->
+  <div class="container">
+    <h1>Gemini AI Chatbot</h1>
+    <div id="chat-box" class="chat-box"></div>
+    <form id="chat-form">
+      <input type="text" id="user-input" placeholder="Type your message..." autocomplete="off" required />
+      <button type="submit">Send</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
